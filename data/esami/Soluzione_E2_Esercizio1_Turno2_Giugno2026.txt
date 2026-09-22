@@ -1,0 +1,38 @@
+
+################################################################################
+# Procedure dotproduct(arr1, arr2, size)
+# a0 -> address of arr1
+# a1 -> address of arr2
+# a2 -> size of arrays
+# return dot product of the two arrays
+################################################################################
+dotproduct:
+    li   t0, 0  # i
+    li   t1, 0  # result
+
+loop_start:
+    # check if i < size
+    bge  t0, a2, loop_end
+
+    # load arr1[i] into t2
+    slli t2, t0, 2
+    add  t2, t2, a0
+    lw   t2, 0(t2)
+
+    # load arr2[i] into t3
+    slli t3, t0, 2
+    add  t3, t3, a1
+    lw   t3, 0(t3)
+
+    # multiply arr1[i] * arr2[i] and add to result
+    mul  t2, t2, t3
+    add  t1, t1, t2
+
+    # increment i
+    addi t0, t0, 1
+
+    j loop_start
+
+loop_end:
+    mv a0, t1
+    ret

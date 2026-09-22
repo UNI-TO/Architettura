@@ -1,0 +1,37 @@
+
+################################################################################
+# Procedure bothshort(str1, str2, N)
+# a0 -> str1
+# a1 -> str2
+# a2 -> N
+# return: 1 if both strings have length <= N, 0 otherwise
+################################################################################
+bothshort:
+    addi sp, sp, -16
+    sw   ra, 0(sp)
+    sw   s1, 4(sp)
+    sw   s2, 8(sp)
+    sw   s3, 12(sp)
+
+    mv   s1, a1
+    mv   s2, a2
+
+    jal  ra, strlen # get length of str1
+    mv   s3, a0
+
+    mv   a0, s1
+    jal  ra, strlen # get length of str2
+
+    bgt  s3, s2, bothshort_ret0
+    bgt  a0, s2, bothshort_ret0
+    li   a0, 1
+    j    bothshort_end
+bothshort_ret0:
+    li   a0, 0
+bothshort_end:
+    lw   ra, 0(sp)
+    lw   s1, 4(sp)
+    lw   s2, 8(sp)
+    lw   s3, 12(sp)
+    addi sp, sp, 16
+    jr   ra
