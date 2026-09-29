@@ -1,0 +1,237 @@
+.statistiche-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.statistiche-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.statistiche-header h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.statistiche-header p {
+  color: rgba(255,255,255,0.85);
+  font-size: 1.1rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-card:nth-child(2) {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.stat-card:nth-child(3) {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+}
+
+.stat-card:nth-child(4) {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+}
+
+.stat-card h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.stat-detail {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.argomenti-progresso,
+.esami-storico,
+.assembly-storico {
+  margin-bottom: 3rem;
+}
+
+.argomenti-progresso h2,
+.esami-storico h2,
+.assembly-storico h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid rgba(255,255,255,0.4);
+  padding-bottom: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.argomenti-lista,
+.esami-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.argomento-progresso-card,
+.esame-storico-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.argomento-progresso-card:hover,
+.esame-storico-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.argomento-progresso-card h3,
+.esame-storico-card h3 {
+  font-size: 1.2rem;
+  color: #1e40af;
+  margin-bottom: 1rem;
+}
+
+.progresso-dettagli {
+  margin-bottom: 1rem;
+}
+
+.progresso-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.progresso-item:last-child {
+  border-bottom: none;
+}
+
+.progresso-item .label {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.progresso-item .value {
+  font-weight: bold;
+  color: #333;
+}
+
+.progresso-barra-container {
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progresso-barra-fill {
+  height: 100%;
+  transition: width 0.3s ease;
+  border-radius: 4px;
+}
+
+.studia-btn,
+.rifai-esame-btn {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #1e40af;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.studia-btn:hover,
+.rifai-esame-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.esame-stats {
+  margin-bottom: 1rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+.stat-row span {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.stat-row strong {
+  color: #333;
+}
+
+.back-link {
+  display: inline-block;
+  color: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.15);
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.back-link:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+@media (max-width: 768px) {
+  .statistiche-container {
+    padding: 1rem;
+  }
+
+  .statistiche-header h1 {
+    font-size: 2rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .argomenti-lista,
+  .esami-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-value {
+    font-size: 2.5rem;
+  }
+}

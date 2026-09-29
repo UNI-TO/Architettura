@@ -1,0 +1,167 @@
+.esame-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.esame-header {
+  background: white;
+  padding: 30px;
+  border-radius: 12px 12px 0 0;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.esame-header h2 {
+  color: #1e40af;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.esame-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.progresso {
+  color: #666;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.timer {
+  color: #1e40af;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #eff6ff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.progresso-barra {
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.progresso-riempimento {
+  height: 100%;
+  background: linear-gradient(90deg, #1e40af, #1d4ed8);
+  transition: width 0.5s ease;
+}
+
+.esame-completato {
+  background: white;
+  border-radius: 15px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.esame-completato h2 {
+  color: #1e40af;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  animation: celebrationBounce 0.6s ease;
+}
+
+@keyframes celebrationBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.risultati {
+  background: #eff6ff;
+  padding: 40px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.punteggio {
+  font-size: 3rem;
+  color: #1e40af;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.percentuale {
+  font-size: 2.5rem;
+  color: #1d4ed8;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tempo-impiegato {
+  font-size: 1.3rem;
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.esito-positivo {
+  color: #4caf50;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.esito-negativo {
+  color: #f44336;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.ricomincia-btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ricomincia-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.4);
+}
+
+.completato-azioni {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.torna-esami-btn {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: transparent;
+  color: #1e40af;
+  border: 2px solid #1e40af;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.torna-esami-btn:hover {
+  background: #1e40af;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.4);
+}
+
+.dettaglio-esame-container {
+  max-width: 860px;
+  margin: 0 auto;
+}

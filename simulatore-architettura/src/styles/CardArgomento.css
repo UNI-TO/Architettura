@@ -1,0 +1,53 @@
+.card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.card-argomento {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-argomento:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-icona {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.card-argomento h3 {
+  color: #1e40af;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card-argomento .descrizione {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.statistiche {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.stat {
+  color: #1d4ed8;
+  font-weight: 600;
+  font-size: 0.95rem;
+}

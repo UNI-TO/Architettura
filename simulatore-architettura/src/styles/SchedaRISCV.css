@@ -1,0 +1,233 @@
+.scheda-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.scheda-container h1 {
+  font-size: 2rem;
+  color: #1e40af;
+  margin-bottom: 0.3rem;
+}
+
+.scheda-sottotitolo {
+  color: #64748b;
+  margin-bottom: 2rem;
+}
+
+.scheda-sezione {
+  margin-bottom: 2.5rem;
+}
+
+.scheda-sezione h2 {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  border-bottom: 3px solid #1e40af;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.scheda-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.scheda-table th {
+  background: #1e40af;
+  color: white;
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.scheda-table td {
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: top;
+}
+
+.scheda-table tr:last-child td { border-bottom: none; }
+
+.scheda-table tr.reg-speciale  td:first-child { background: #fef3c7; }
+.scheda-table tr.reg-temporaneo td:first-child { background: #fee2e2; }
+.scheda-table tr.reg-saved      td:first-child { background: #dcfce7; }
+.scheda-table tr.reg-argomento  td:first-child { background: #dbeafe; }
+
+.scheda-table code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
+}
+
+.legenda {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.legenda-item {
+  padding: 0.2rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.legenda-item.reg-speciale  { background: #fef3c7; color: #92400e; }
+.legenda-item.reg-temporaneo { background: #fee2e2; color: #991b1b; }
+.legenda-item.reg-saved     { background: #dcfce7; color: #14532d; }
+.legenda-item.reg-argomento { background: #dbeafe; color: #1e3a8a; }
+
+.formati-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.formato-card {
+  background: white;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.formato-nome {
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.formato-campi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.formato-campo {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  font-family: 'Courier New', monospace;
+}
+
+.formato-uso {
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+.istr-categoria {
+  margin-bottom: 1.5rem;
+}
+
+.istr-categoria h3 {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  background: #f8fafc;
+  padding: 0.4rem 0.8rem;
+  border-left: 4px solid #1e40af;
+  border-radius: 0 6px 6px 0;
+}
+
+.istr-table td:first-child {
+  width: 45%;
+  font-family: 'Courier New', monospace;
+  font-size: 0.88rem;
+  color: #1e3a8a;
+  white-space: nowrap;
+}
+
+.istr-table td:last-child {
+  color: #374151;
+  font-size: 0.88rem;
+}
+
+.convenzioni-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.convenzione-box {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+.convenzione-box h4 {
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.convenzione-box.caller h4 { color: #b45309; }
+.convenzione-box.callee h4 { color: #15803d; }
+.convenzione-box.stack h4  { color: #1e40af; }
+
+.convenzione-box ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.convenzione-box li {
+  margin-bottom: 0.4rem;
+  font-size: 0.88rem;
+  color: #374151;
+}
+
+.convenzione-box code {
+  font-family: 'Courier New', monospace;
+  background: #f1f5f9;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.formule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.formula-box {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  border-top: 3px solid #1e40af;
+}
+
+.formula-titolo {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.formula-box code {
+  display: block;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #1e3a8a;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.formula-asm {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-family: 'Courier New', monospace;
+}
+
+@media (max-width: 600px) {
+  .istr-table td:first-child { width: 50%; font-size: 0.78rem; }
+  .istr-table td:last-child  { font-size: 0.78rem; }
+}

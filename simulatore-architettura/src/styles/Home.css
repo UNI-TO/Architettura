@@ -1,0 +1,91 @@
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sottotitolo {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+.menu-principale {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.icona {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.menu-card h2 {
+  color: #1e40af;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.menu-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.info-sezione {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.info-sezione h3 {
+  color: #1e40af;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.info-sezione ul {
+  list-style: none;
+  color: #666;
+}
+
+.info-sezione li {
+  padding: 10px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.info-sezione li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #1e40af;
+  font-weight: bold;
+}

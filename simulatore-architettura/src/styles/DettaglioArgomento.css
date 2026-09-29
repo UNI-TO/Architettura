@@ -1,0 +1,225 @@
+.dettaglio-argomento-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.back-link {
+  color: white;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-5px);
+}
+
+.argomento-header {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.argomento-header h1 {
+  color: #1e40af;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.argomento-header p {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.stats-badge {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.stats-badge span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: white;
+  border-radius: 8px;
+  color: #1e40af;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sezione {
+  margin-bottom: 40px;
+}
+
+.sezione h2 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.domande-lista,
+.esercizi-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vuoto {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.quiz-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quiz-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-contatore {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  white-space: nowrap;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.quiz-barra {
+  flex: 1;
+  height: 8px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.quiz-barra-fill {
+  height: 100%;
+  background: white;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.quiz-risultati {
+  background: white;
+  border-radius: 15px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  animation: slideDown 0.4s ease;
+}
+
+.quiz-risultati-score {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-risultati h3 {
+  color: #1e40af;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.quiz-percentuale {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.quiz-percentuale.positivo { color: #4caf50; }
+.quiz-percentuale.negativo { color: #f44336; }
+
+.quiz-esito {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.riavvia-btn {
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #1e40af;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.riavvia-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.4);
+}
+
+.esito-positivo { color: #4caf50; font-weight: 600; }
+.esito-negativo { color: #f44336; font-weight: 600; }
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.errore-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.errore-container h2 {
+  color: #f44336;
+  margin-bottom: 20px;
+}
+
+.errore-container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #1e40af;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.errore-container a:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
